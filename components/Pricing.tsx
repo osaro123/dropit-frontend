@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {FaCircleCheck} from 'react-icons/fa6'
 import {IoCloseCircle} from 'react-icons/io5'
 
@@ -46,7 +47,7 @@ const Pricing = () => {
                         <span className='self-end text-sm opacity-80'>/month</span>
                     </div>
                     <p className='pb-4'>{pricing.description}</p>
-                    <ul>
+                    <ul className='mb-4'>
                         {pricing.perks.map(({description,available},i) => (
                             <li key={i} className='pb-2 flex items-center gap-2'>
                                 {available ? <FaCircleCheck /> : <IoCloseCircle size={20}/>}
@@ -54,7 +55,7 @@ const Pricing = () => {
                             </li>
                         ))}
                     </ul>
-                    <button className='mt-4 bg-black text-white px-8 py-2 rounded-md'>Join</button>
+                    <Link href={"/sign-up"} className='bg-black text-white px-8 py-2 rounded-md hover:bg-black/90'>Join</Link>
                 </div>
             ))}
         </div>
