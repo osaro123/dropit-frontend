@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className='tracking-tighter font-bold text-6xl max-w-xl'>Seamless <span className="text-[#2563EB]">Sharing</span>, Instant Syncing</h1>
         <p className='max-w-[400px] pt-4 pb-8'>Your Gateway to Effortless File and Text Sharing Across Devices
         Bridging Cross-platform Gaps</p>
-        <Link href={"/sign-up"} className="px-6 py-2 rounded-md bg-black text-white hover:bg-opacity-90">Get Started</Link>
+        <Link href={"/sign-up"} className="px-6 py-3 rounded-md bg-black text-white hover:bg-opacity-90">Get Started</Link>
         <motion.div 
             className='w-full bg-[#eee] h-[600px] rounded-md my-24'
             initial={{
