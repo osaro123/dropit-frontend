@@ -39,12 +39,12 @@ const SignUp = () => {
             <form className='w-full' onSubmit={handleSubmit(createAccount)}>
                 <h1 className='text-2xl pb-2 font-bold'>Unlock Seamless <span className='text-[#2563EB]'>Sharing</span></h1>
                 <p className='opacity-80 pb-6'>Begin your journey to effortless file and text sharing across all your devices.</p>
-                <div className={`flex flex-col mb-4 ${errors.email ? "mb-1" : "mb-4"}`}>
+                <div className={`flex flex-col ${errors.email ? "mb-1" : "mb-4"}`}>
                     <label htmlFor="email" className='pb-2 font-medium'>Email Address</label>
                     <input {...register("email")} type="email" id='email' className='border-[1px] border-black h-12 px-2 py-3 rounded-md'/>
                 </div>
                 {errors.email && <p className='text-red-500'>{errors.email?.message}</p>}
-                <div className={`flex flex-col mb-4 ${errors.username ? "mb-1" : "mb-4"}`}>
+                <div className={`flex flex-col ${errors.username ? "mb-1" : "mb-4"}`}>
                     <label htmlFor="username" className='pb-2 font-medium'>Username</label>
                     <input {...register("username")} type="text" id='username'  className='border-[1px] border-black h-12 px-2 py-3 rounded-md'/>
                 </div>
