@@ -1,6 +1,7 @@
 "use client"
 
 import { Eye, EyeOff } from 'lucide-react'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 const SignUp = () => {
@@ -34,6 +35,7 @@ const SignUp = () => {
                     </div>
                 </div>
                 <button className='text-center bg-black text-white w-full mt-8 py-4 rounded-full'>Create Account</button>
+                <p className='pt-2'>Have an account already? <Link href={"/login"} className='underline'>Login</Link></p>
             </form>
         </div>
     </div>
