@@ -32,7 +32,7 @@ const SignUp = () => {
   return (
     <div className='w-[90%] h-screen mx-auto'>
         <Toaster position='top-right' richColors/>
-        <h3 className='font-bold py-4'>
+        <h3 className='font-bold py-4 cursor-pointer'>
             <Link href={"/"}>dropIt</Link>
         </h3>
         <div className='flex items-center h-[calc(100vh-4rem)] max-w-md w-[90%] mx-auto'>
