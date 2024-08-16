@@ -20,8 +20,19 @@ const Hero = () => {
         <p className='max-w-[400px] pt-4 pb-8'>Your Gateway to Effortless File and Text Sharing Across Devices
         Bridging Cross-platform Gaps</p>
         <button className="px-6 py-2 rounded-md bg-black text-white hover:bg-opacity-90">Get Started</button>
-        <div className='w-full bg-[#eee] h-[600px] rounded-md my-24'>
-        </div>
+        <motion.div 
+            className='w-full bg-[#eee] h-[600px] rounded-md my-24'
+            initial={{
+                opacity:0,
+                scale: 0.5
+            }}
+            transition={{duration: .4}}
+            animate={{
+                opacity:1,
+                scale: 1
+            }}
+        >
+        </motion.div>
     </div>
   )
 }

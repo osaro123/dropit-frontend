@@ -4,7 +4,7 @@ import { Eye, EyeOff } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-const SignUp = () => {
+const Login = () => {
     const [showPassword,setShowPassword] = useState(false)
   return (
     <div className='w-[90%] h-screen mx-auto'>
@@ -19,10 +19,6 @@ const SignUp = () => {
                     <label htmlFor="email" className='pb-2 font-medium'>Email Address</label>
                     <input type="email" id='email' className='border-[1px] border-black h-12 px-2 py-3 rounded-md'/>
                 </div>
-                <div className='flex flex-col mb-4'>
-                    <label htmlFor="username" className='pb-2 font-medium'>Username</label>
-                    <input type="text" id='username' className='border-[1px] border-black h-12 px-2 py-3 rounded-md'/>
-                </div>
                 <div className='flex flex-col'>
                     <label htmlFor="password" className='py-2 font-medium'>Password</label>
                     <div className='flex items-center gap-1 w-full h-12'>
@@ -36,12 +32,12 @@ const SignUp = () => {
                         </button>
                     </div>
                 </div>
-                <button className='text-center bg-black text-white w-full mt-8 py-4 rounded-full'>Create Account</button>
-                <p className='pt-2'>Have an account already? <Link href={"/login"} className='underline'>Login</Link></p>
+                <button className='text-center bg-black text-white w-full mt-8 py-4 rounded-full'>Login</button>
+                <p className='pt-2'>Don't have an account? <Link href={"/sign-up"} className='underline'>Create Account</Link></p>
             </form>
         </div>
     </div>
   )
 }
 
-export default SignUp
+export default Login

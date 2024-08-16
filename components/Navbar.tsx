@@ -12,7 +12,9 @@ const Navbar = () => {
   return (
     <nav className='flex w-full justify-between items-center py-4'>
         <div>
-            <h3 className='font-bold'>dropIt</h3>
+            <h3 className='font-bold'>
+                <Link href={"/"}>dropIt</Link>
+            </h3>
         </div>
         <ul className='flex items-center gap-4 text-sm'>
             <FlipLink href='#pricing'>Pricing</FlipLink>

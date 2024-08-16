@@ -6,7 +6,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='container mx-auto'>
+    <div className='sm:w-[80%] w-[90%] mx-auto'>
       <Navbar/>
       <Hero/>
       <Pricing/>

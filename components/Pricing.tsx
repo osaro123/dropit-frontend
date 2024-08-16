@@ -37,7 +37,7 @@ const Pricing = () => {
     <div id='pricing'>
         <h3 className='text-center font-medium text-3xl mb-4'>Choose Your Plan</h3>
         <p className='text-center opacity-80'>We provide a very simple and transparent pricing model</p>
-        <div className='py-16 grid grid-cols-2 gap-8 w-[75%] mx-auto'>
+        <div className='py-16 grid sm:grid-cols-2 grid-cols-1 gap-8 sm:w-[75%] w-[90%] mx-auto'>
             {pricingData.map((pricing,i) => (
                 <div key={i} className='border-[1px] border-black p-8 rounded-md'>
                     <h3>{pricing.plan}</h3>
@@ -54,6 +54,7 @@ const Pricing = () => {
                             </li>
                         ))}
                     </ul>
+                    <button className='mt-4 bg-black text-white px-8 py-2 rounded-md'>Join</button>
                 </div>
             ))}
         </div>
