@@ -10,7 +10,7 @@ const SignUp = () => {
         <h3 className='font-bold py-4'>dropIt</h3>
         <div className='flex items-center h-[calc(100vh-4rem)] max-w-md w-[90%] mx-auto'>
             <form className='w-full'>
-                <h1 className='text-2xl pb-2 font-bold'>Unlock Seamless Sharing</h1>
+                <h1 className='text-2xl pb-2 font-bold'>Unlock Seamless <span className='text-[#2563EB]'>Sharing</span></h1>
                 <p className='opacity-80 pb-6'>Begin your journey to effortless file and text sharing across all your devices.</p>
                 <div className='flex flex-col mb-4'>
                     <label htmlFor="email" className='pb-2 font-medium'>Email Address</label>
@@ -33,7 +33,7 @@ const SignUp = () => {
                         </button>
                     </div>
                 </div>
-                <button className='text-center bg-black text-white w-full mt-4 py-4 rounded-full'>Create Account</button>
+                <button className='text-center bg-black text-white w-full mt-8 py-4 rounded-full'>Create Account</button>
             </form>
         </div>
     </div>
