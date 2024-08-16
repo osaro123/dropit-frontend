@@ -55,10 +55,10 @@ const SignUp = () => {
                         <input {...register("password")} type={showPassword ? "text" : "password"} id='password' className='border-[1px] border-black px-2 py-3 rounded-l-md w-[90%]'/>
                         <button 
                             type='button'
-                            className='w-[10%] h-12 bg-black text-white flex items-center justify-center rounded-r-md'
+                            className='w-[10%] h-12 bg-black text-white flex items-center justify-center px-2 rounded-r-md'
                             onClick={() => setShowPassword(!showPassword)}
                         >
-                            {showPassword ? <EyeOff /> : <Eye />}
+                            {showPassword ? <EyeOff size={20}/> : <Eye size={20}/>}
                         </button>
                     </div>
                 </div>
