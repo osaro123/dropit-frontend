@@ -42,7 +42,7 @@ const Login = () => {
                     type='submit' 
                     className='text-center bg-black text-white w-full mt-8 py-4 rounded-full hover:bg-black/90'
                 >Login</button>
-                <p className='pt-2'>Don't have an account? <Link href={"/sign-up"} className='underline'>Create Account</Link></p>
+                <p className='pt-2'>Don{"'"}t have an account? <Link href={"/sign-up"} className='underline'>Create Account</Link></p>
             </form>
         </div>
     </div>
