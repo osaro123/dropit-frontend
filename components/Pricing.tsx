@@ -42,7 +42,7 @@ const Pricing = () => {
                 <div key={i} className='border-[1px] border-black p-8 rounded-md'>
                     <h3>{pricing.plan}</h3>
                     <div className='flex items-center py-4'>
-                        <p className='text-3xl font-bold'>{`$${pricing.amount}`}</p>
+                        <p className='text-4xl font-bold'>{`$${pricing.amount}`}</p>
                         <span className='self-end text-sm opacity-80'>/month</span>
                     </div>
                     <p className='pb-4'>{pricing.description}</p>
