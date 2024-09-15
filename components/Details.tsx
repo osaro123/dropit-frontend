@@ -34,7 +34,7 @@ const Details = () => {
         <div className='sticky'>
             {details.map(({title,description},i) => (
                 <div className='mb-12' key={i}>
-                    <div className='bg-[#eee] w-full h-[200px] rounded-md mb-4'>
+                    <div className='bg-[#eeeeee] bg-opacity-40 w-full h-[200px] rounded-md mb-4'>
                         {/* <Image src={} alt={title}/> */}
                     </div>
                     <h3 className='text-[#2563EB] mb-1 text-sm'>{title}</h3>
