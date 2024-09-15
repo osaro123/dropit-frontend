@@ -2,7 +2,8 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Eye, EyeOff } from 'lucide-react'
 import Link from 'next/link'
-import React, { FormEvent, useState } from 'react'
+import { useRouter } from 'next/router'
+import React, { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { toast, Toaster } from 'sonner'
 import {z} from "zod"
@@ -18,6 +19,8 @@ type FormFields = z.infer<typeof schema>
 const SignUp = () => {
     const [showPassword,setShowPassword] = useState(false)
 
+    // const router = useRouter()
+
     const {
         register,
         handleSubmit,
@@ -28,6 +31,7 @@ const SignUp = () => {
 
     const createAccount: SubmitHandler<FormFields> = () => {
         toast.success('Account Created')
+        // router.push("/login")
     }
   return (
     <div className='w-[90%] h-screen mx-auto'>
@@ -51,8 +55,8 @@ const SignUp = () => {
                 {errors.username && <p className='text-red-500'>{errors.username?.message}</p>}
                 <div className='flex flex-col mb-1'>
                     <label htmlFor="password" className='py-2 font-medium'>Password</label>
-                    <div className='flex items-center gap-1 w-full h-12'>
-                        <input {...register("password")} type={showPassword ? "text" : "password"} id='password' className='border-[1px] border-black px-2 py-3 rounded-l-md w-[90%]'/>
+                    <div className='flex items-center gap-[0.15rem] w-full h-12'>
+                        <input {...register("password")} type={showPassword ? "text" : "password"} id='password' className='border-[1px] border-black px-2 py-3 h-12 rounded-l-md w-[90%]'/>
                         <button 
                             type='button'
                             className='w-[10%] h-12 bg-black text-white flex items-center justify-center px-2 rounded-r-md'

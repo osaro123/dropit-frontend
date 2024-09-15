@@ -43,8 +43,8 @@ const Login = () => {
                 {errors.email && <p className='text-red-500'>{errors.email?.message}</p>}
                 <div className='flex flex-col mb-1'>
                     <label htmlFor="password" className='py-2 font-medium'>Password</label>
-                    <div className='flex items-center gap-1 w-full h-12'>
-                        <input {...register("password")} type={showPassword ? "text" : "password"} id='password' className='border-[1px] border-black px-2 py-3 rounded-l-md w-[90%]'/>
+                    <div className='flex items-center gap-[0.15rem] w-full h-12'>
+                        <input {...register("password")} type={showPassword ? "text" : "password"} id='password' className='border-[1px] border-black px-2 py-3 h-12 rounded-l-md w-[90%]'/>
                         <button 
                             type='button'
                             className='w-[10%] h-12 bg-black text-white flex items-center justify-center px-2 rounded-r-md'

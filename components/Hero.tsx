@@ -1,7 +1,10 @@
 "use client"
-import {MoveRight} from "lucide-react"
+import {Moon, MoveRight, Sun} from "lucide-react"
 import {motion} from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
+import productImg from "../assets/img2.jpeg"
+import { useState } from "react"
 
 const Hero = () => {
   return (
@@ -18,7 +21,7 @@ const Hero = () => {
             </motion.div>
         </motion.div>
         <h1 className='tracking-tighter font-bold text-6xl max-w-xl'>Seamless <span className="text-[#2563EB]">Sharing</span>, Instant Syncing</h1>
-        <p className='max-w-[400px] pt-4 pb-8'>Your Gateway to Effortless File and Text Sharing Across Devices
+        <p className='max-w-[400px] opacity-80 pt-4 pb-8'>Your Gateway to Effortless File and Text Sharing Across Devices
         Bridging Cross-platform Gaps</p>
         <Link href={"/sign-up"} className="px-6 py-3 rounded-md bg-black text-white hover:bg-opacity-90">Get Started</Link>
         <motion.div 
@@ -33,6 +36,7 @@ const Hero = () => {
                 scale: 1
             }}
         >
+            <Image src={productImg} alt="product-img" className="h-full rounded-md"/>
         </motion.div>
     </div>
   )
