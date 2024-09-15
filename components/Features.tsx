@@ -28,7 +28,7 @@ const Features = () => {
         <h3 className='opacity-60'>What we have to offer</h3>
         <div className='pt-16 grid grid-cols-3  gap-4'>
             {features.map(({title,description},i) => (
-                <div className={`${i == 0 ? "col-span-2" : ""} border p-12 ${i == 3 ? "col-span-2" : ""} cursor-pointer bg-[#eee] rounded-md relative`}>
+                <div className={`${i == 0 ? "col-span-2" : ""} border p-12 ${i == 3 ? "col-span-2" : ""} cursor-pointer bg-[#eee] rounded-md relative`} key={i}>
                     <div className='border inline-block rounded-full p-4'>
                         <UploadCloudIcon/>
                     </div>

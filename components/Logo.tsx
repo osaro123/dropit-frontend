@@ -55,11 +55,11 @@ const Logo = () => {
                 }}
                 className='flex gap-16 flex-none pr-16'
             >
-                {logos.map(({id,src}) => (
-                    <Image src={src} alt=''/>
+                {logos.map(({id,src},i) => (
+                    <Image src={src} alt='' key={i}/>
                 ))}
-                {logos.map(({id,src}) => (
-                    <Image src={src} alt=''/>
+                {logos.map(({id,src},i) => (
+                    <Image src={src} alt='' key={i}/>
                 ))}
             </motion.div>
         </div>
